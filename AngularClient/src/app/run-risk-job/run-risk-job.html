@@ -1,0 +1,4 @@
+<button (click)="runRiskJob()" [disabled]="loading">
+      {{ loading ? 'Running...' : 'Run Risk Job' }}
+    </button>
+    <div *ngIf="message">{{ message }}</div>
