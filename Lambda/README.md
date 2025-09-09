@@ -1,3 +1,7 @@
+
+
+1. BorrowerRatingJob.cs file 
+
 2. Triggering via EventBridge or API Gateway
 EventBridge:
 Create an EventBridge rule (e.g., scheduled every hour or on specific events).

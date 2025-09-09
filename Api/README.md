@@ -1,4 +1,12 @@
-2. Docker Containerization: docker-compose.yml
+1. Api used to call /run-risk-job
+I have created Api with DotNet 9.0, please have it installed first
+Go to BmoDemo/Api/Client folder and run api (either dotnet run in VS Code or run project in Visual Studio)
+In a browser go to: http://localhost:5000/swagger/index.html
+
+
+2. Docker Containerization: Created Dockerfile inside BmoDemo/Api/src
+ To create image go to BmoDemo/Api/src folder in a terminal and run:
+ docker build -t my_image_name . 
 
 3. ECS Deployment Strategy
 Task Definitions:
@@ -36,4 +44,4 @@ Steps: Build, test, Docker build, push to ECR, update ECS service via AWS CLI.
 Example GitHub Actions workflow snippet: deploy.yml
 
 Summary:
-You now have a .NET 6 Web API with a /run-risk-job endpoint, containerized for ECS, with a deployment strategy covering task definitions, networking, IAM, and service discovery. Observability and secure config use CloudWatch Logs, Secrets Manager, and Parameter Store. CI/CD can be implemented with CodePipeline or GitHub Actions.
+You now have a .NET 9 Web API with a /run-risk-job endpoint, containerized for ECS, with a deployment strategy covering task definitions, networking, IAM, and service discovery. Observability and secure config use CloudWatch Logs, Secrets Manager, and Parameter Store. CI/CD can be implemented with CodePipeline or GitHub Actions.

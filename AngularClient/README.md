@@ -1,4 +1,7 @@
 # Client
+1. To start client go to AngularClient folder and run:
+ng serve 
+Note: you have to have Angular installed
 
 #########################
 

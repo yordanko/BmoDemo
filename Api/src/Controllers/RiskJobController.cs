@@ -14,7 +14,7 @@ namespace src.Controllers
         public IActionResult RunRiskJob()
         {
             // Simulate pulling borrower risk data
-            var simulatedData = $"BorrowerRisk-{DateTime.UtcNow:yyyyMMddHHmmss}";
+            var simulatedData = $"Borrower_Risk_Job-{DateTime.UtcNow:yyyyMMddHHmmss}";
             _riskData.Add(simulatedData);
 
             return Ok(new { message = "Risk job run successfully", data = simulatedData });
